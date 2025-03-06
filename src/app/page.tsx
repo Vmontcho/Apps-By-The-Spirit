@@ -185,9 +185,8 @@ export default function Home() {
       {/* Benefits Section */}
       <section className="py-16 bg-[#F1F3F7]">
         <div className="container mx-auto px-2 text-center">
-          <h4 className="text-2xl md:text-4xl font-bold mb-6 font-[Clash Display]">Avec</h4>
-          <h3 className="text-3xl md:text-4xl font-bold mb-2 text-[#621B93] font-[Clash Display]">5 bonnes raisons</h3>
-          <h4 className="text-2xl font-bold mb-12">de nous faire confiance</h4>
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-[#621B93] font-[Clash Display]">5 bonnes raisons</h2>
+          <h3 className="text-2xl font-bold mb-12">de nous faire confiance</h3>
 
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
@@ -213,6 +212,95 @@ export default function Home() {
             <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
               <Image src="/benefit5.png" alt="Espace client personnalisé" width={64} height={64} className="mb-4" />
               <p className="font-semibold">Espace client<br />personnalisé</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-[Clash Display]">Et un</h2>
+          <h3 className="text-3xl md:text-4xl font-bold mb-12 text-[#621B93] font-[Clash Display]">Paiement flexible</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+              <h4 className="text-4xl md:text-6xl font-bold text-[#621B93] mb-4">50%</h4>
+              <p className="text-[#8987A1]">À l'avance</p>
+            </div>
+            
+            <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+              <h4 className="text-4xl md:text-6xl font-bold text-[#621B93] mb-4">30%</h4>
+              <p className="text-[#8987A1]">À la livraison</p>
+            </div>
+            
+            <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+              <h4 className="text-4xl md:text-6xl font-bold text-[#621B93] mb-4">20%</h4>
+              <p className="text-[#8987A1]">À la maintenance</p>
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto text-left bg-white p-8 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-[Clash Display] text-center">Votre App en 30 Jours</h2>
+            <p className="text-[#8987A1] text-center mb-6">Une proposition de valeur unique, compétitive et premium</p>
+            
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <span className="text-2xl">💰</span>
+              <h3 className="text-2xl font-bold">À partir de 1 Million FCFA</h3>
+            </div>
+            <p className="text-[#8987A1] text-center mb-8">Environ 1500 $ ou 1500 Euro</p>
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <span className="text-green-500 text-xl">✓</span>
+                <p>Hébergement & domaine gratuits (selon App)</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-green-500 text-xl">✓</span>
+                <p>Formation de prise en main & documentation incluses</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-green-500 text-xl">✓</span>
+                <p>Application Testée & optimisée avant livraison</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-green-500 text-xl">✓</span>
+                <p>2 semaines de maintenances post déploiement gratuite</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-green-500 text-xl">✓</span>
+                <p>Maintenance additionnelle ou continu (+20-30%)</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-green-500 text-xl">✓</span>
+                <p>Fonctionnalités additionnelles ou avancées (sur devis)</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-green-500 text-xl">✓</span>
+                <p>Code source fournis au solde</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-green-500 text-xl">✓</span>
+                <p>Design UX/UI pro, option premium (+30%)</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-green-500 text-xl">✓</span>
+                <p>Équipe dédiée (6j/7) sur demande (+50%)</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-green-500 text-xl">✓</span>
+                <p>Systèmes multi-applications web/mobile (sur devis)</p>
+              </div>
+            </div>
+
+            <div className="mt-8 flex flex-col gap-4">
+              <button className="w-full bg-[#621B93] text-white px-6 py-3 rounded-full font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2">
+                <span className="text-xl">✨</span>
+                Soumettre une demande
+              </button>
+              <button className="w-full bg-[#F1F3F7] text-[#621B93] px-6 py-3 rounded-full font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg">
+                Réserver un appel vidéo
+              </button>
             </div>
           </div>
         </div>
