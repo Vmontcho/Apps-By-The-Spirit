@@ -7,7 +7,7 @@ export default function Home() {
       <header className="fixed w-full top-0 bg-white z-50 py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Image
-            src="/logo.png"
+            src="/logo-nav.png"
             alt="APPS By Spirit"
             width={120}
             height={40}
@@ -19,7 +19,7 @@ export default function Home() {
             <a href="#" className="text-[#8987A1] hover:text-[#621B93]">Tarifs</a>
             <a href="#" className="text-[#8987A1] hover:text-[#621B93]">FAQ</a>
           </nav>
-          <button className="bg-[#621B93] text-white px-6 py-2 rounded-full hover:opacity-90">
+          <button className="bg-[#621B93] text-white px-6 py-2 rounded-full font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg">
             Se connecter
           </button>
         </div>
@@ -41,7 +41,7 @@ export default function Home() {
               <p className="text-[#621B93] font-semibold">Besoin d&apos;une application rapidement ?</p>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-8 font-[Clash Display]">Nous créons votre Application<br />en 30 jours</h1>
-            <button className="bg-[#621B93] text-white px-8 py-3 rounded-full text-lg hover:opacity-90">
+            <button className="bg-[#621B93] text-white px-8 py-3 rounded-full text-lg font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg">
               Je veux mon App →
             </button>
           </div>
@@ -102,7 +102,7 @@ export default function Home() {
             {/* Multi Apps System Card */}
             <div className="bg-white p-8 rounded-3xl text-black">
               <div className="mb-6">
-                <Image src="/window.png" alt="System" width={56} height={56} />
+                <Image src="/window-web.png" alt="System" width={56} height={56} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Systèmes<br />Multi Apps</h3>
               <p className="text-[#8987A1] mb-6">Système complet avec plusieurs applications interconnectées</p>
@@ -122,16 +122,99 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold mb-2">Avec intégration</h3>
           <div className="flex justify-center items-center gap-4 mb-2">
-            <span className="bg-[#621B93] text-white px-4 py-2 rounded-full">d'outils IA</span>
+            <span className="bg-[#621B93] text-white px-4 py-2 rounded-full">d&apos;outils IA</span>
             <Image src="/ai-icons.png" alt="AI Tools" width={136} height={40} />
           </div>
           <div className="flex justify-center items-center gap-2 mb-2">
-            <span className="bg-[#621B93] text-white px-4 py-2 rounded-full">et des agants personnalisés</span>
+            <span className="bg-[#621B93] text-white px-4 py-2 rounded-full">et des agents personnalisés</span>
             <div className="flex gap-2">
               <Image src="/bot-icons.png" alt="Bot Icons" width={136} height={40} />
             </div>
           </div>
           <p className="text-[#8987A1]">et autres automatisations...</p>
+        </div>
+      </section>
+
+      {/* 5 Steps Process Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-[Clash Display]">Votre App est prête</h2>
+          <h3 className="text-3xl md:text-4xl font-bold mb-12 text-[#621B93] font-[Clash Display]">en 5 étapes clés</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {/* Step 1 */}
+            <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <Image src="/step1.png" alt="Demande" width={80} height={80} className="mx-auto mb-4" />
+              <h4 className="text-xl font-bold mb-2">Demande<br />et Kick Off</h4>
+              <p className="text-[#8987A1]">Soumettez votre demande et réservez un call pour finaliser le cahier de charges.</p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <Image src="/step2.png" alt="Design" width={80} height={80} className="mx-auto mb-4" />
+              <h4 className="text-xl font-bold mb-2">Design prototype<br />(UX et MVP)</h4>
+              <p className="text-[#8987A1]">Nous réalisons le design UX et/ou MVP de votre projet que vous pourrez essayer pendant 10 jours.</p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <Image src="/step3.png" alt="Développement" width={80} height={80} className="mx-auto mb-4" />
+              <h4 className="text-xl font-bold mb-2">Développement<br />de l&apos;application</h4>
+              <p className="text-[#8987A1]">Nous développons ensuite les interfaces et fonctionnalités de votre application.</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            {/* Step 4 */}
+            <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <Image src="/step4.png" alt="Test" width={80} height={80} className="mx-auto mb-4" />
+              <h4 className="text-xl font-bold mb-2">Test et Déploiement</h4>
+              <p className="text-[#8987A1]">Avec la priorité à la qualité, nous testons rigoureusement chaque aspect de votre application. Une fois validée, nous la déployons pour une utilisation fluide et sans tracas pour vos utilisateurs.</p>
+            </div>
+
+            {/* Step 5 */}
+            <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <Image src="/step5.png" alt="Maintenance" width={80} height={80} className="mx-auto mb-4" />
+              <h4 className="text-xl font-bold mb-2">Maintenance et prise en main</h4>
+              <p className="text-[#8987A1]">Nous assurons la maintenance pendant 10 jours gratuitement, une fois déployée : nous garantissons que votre application fonctionnera au pic de sa forme, sans bugs, selon le scope du projet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-16 bg-[#F1F3F7]">
+        <div className="container mx-auto px-2 text-center">
+          <h4 className="text-2xl md:text-4xl font-bold mb-6 font-[Clash Display]">Avec</h4>
+          <h3 className="text-3xl md:text-4xl font-bold mb-2 text-[#621B93] font-[Clash Display]">5 bonnes raisons</h3>
+          <h4 className="text-2xl font-bold mb-12">de nous faire confiance</h4>
+
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+            <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <Image src="/benefit1.png" alt="Design UX pro" width={64} height={64} className="mb-4" />
+              <p className="font-semibold">Design<br />UX pro</p>
+            </div>
+
+            <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <Image src="/benefit2.png" alt="Solution optimisée" width={64} height={64} className="mb-4" />
+              <p className="font-semibold">Solution<br />optimisée</p>
+            </div>
+
+            <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <Image src="/benefit3.png" alt="Livraison rapide" width={64} height={64} className="mb-4" />
+              <p className="font-semibold">Livraison<br />rapide</p>
+            </div>
+
+            <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <Image src="/benefit4.png" alt="Tarif compétitif" width={64} height={64} className="mb-4" />
+              <p className="font-semibold">Tarif<br />compétitif</p>
+            </div>
+
+            <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <Image src="/benefit5.png" alt="Espace client personnalisé" width={64} height={64} className="mb-4" />
+              <p className="font-semibold">Espace client<br />personnalisé</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
