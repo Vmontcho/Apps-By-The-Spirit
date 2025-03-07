@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CookieConsent from '../components/CookieConsent';
 
 export default function Home() {
   return (
@@ -552,6 +553,117 @@ export default function Home() {
           </button>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-[Clash Display]">Quelques questions fréquentes</h2>
+          <h3 className="text-3xl md:text-4xl font-bold mb-12 text-[#621B93] font-[Clash Display]">FAQs</h3>
+          
+          <div className="max-w-3xl mx-auto space-y-4">
+            <details className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] cursor-pointer group">
+              <summary className="font-bold text-lg flex justify-between items-center">
+                Comment commencer ?
+                <span className="text-[#621B93] group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-4 text-[#8987A1]">Remplissez le formulaire ci-dessus ou contactez-nous directement. Nous organiserons un appel pour discuter de votre projet en détail.</p>
+            </details>
+
+            <details className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] cursor-pointer group">
+              <summary className="font-bold text-lg flex justify-between items-center">
+                Si je veux juste un MVP ou une maquette est-ce possible ?
+                <span className="text-[#621B93] group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-4 text-[#8987A1]">Oui, nous pouvons créer uniquement un MVP ou une maquette (Design UX/UI). Nous adaptons nos services à vos besoins spécifiques. Contacter nous pour plus de détails.</p>
+            </details>
+
+            <details className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] cursor-pointer group">
+              <summary className="font-bold text-lg flex justify-between items-center">
+                Combien de temps peut durer un projet ?
+                <span className="text-[#621B93] group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-4 text-[#8987A1]">La durée standard est de 30 jours, mais elle peut varier selon la simplicité, la complexité du projet et les fonctionnalités requises.</p>
+            </details>
+
+            <details className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] cursor-pointer group">
+              <summary className="font-bold text-lg flex justify-between items-center">
+                Que se passe t'il si je ne peux pas solder ?
+                <span className="text-[#621B93] group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-4 text-[#8987A1]">Nous pouvons proposer des options de paiement flexibles et pouvons discuter d'un plan de paiement adapté à votre situation. Le cas échéant l'accès à l'application pourrait être limité. Contacter nous pour en discuter.</p>
+            </details>
+
+            <details className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] cursor-pointer group">
+              <summary className="font-bold text-lg flex justify-between items-center">
+                Que se passe t'il si je ne suis pas satisfait ?
+                <span className="text-[#621B93] group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-4 text-[#8987A1]">Nous nous assrons dès le départ d'être aligné avec vous sur le cahier de charges, le design et les aspects techniques et opérationnels de votre projet. Nous travaillons en étroite collaboration avec vous tout au long du projet, en toute transparence et accord pour garantir votre satisfaction.</p>
+            </details>
+
+            <details className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] cursor-pointer group">
+              <summary className="font-bold text-lg flex justify-between items-center">
+                Et si je veux plus ou uniquement de la maintenance ?
+                <span className="text-[#621B93] group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-4 text-[#8987A1]">Nous proposons des services de maintenance flexibles, que ce soit pour nos projets avec vous ou des applications existantes.</p>
+            </details>
+
+            <details className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] cursor-pointer group">
+              <summary className="font-bold text-lg flex justify-between items-center">
+                Combien de fonctionnalités puis-je ajouter ?
+                <span className="text-[#621B93] group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-4 text-[#8987A1]">Autant que vous le souhaitez. Toutefois il faut noter que le nombre de fonctionnalités dépend de la complexité, de votre budget, du délai et surtout de la pertinence pour les utilisateurs, et de certains aspects à prendre en compte. Nous pouvons vous conseiller sur les priorités et établir un plan d'évolution.</p>
+            </details>
+
+            <details className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] cursor-pointer group">
+              <summary className="font-bold text-lg flex justify-between items-center">
+                Puis-je payer cash, sur 3, 6 ou 12 mois ?
+                <span className="text-[#621B93] group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-4 text-[#8987A1]">Oui, nous acceptons différentes modalités et moyens de paiement. Toutefois les échéanciers s'appliquent selon vos besoins à partir d'un certain montant. En deça, nous n'acceptons que 50% à l'avance, 30% à la livraison et 20% après la durée standard de maintenance post déploiement.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-[#621B93] text-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <Image
+                src="/logo-footer.png"
+                alt="APPS By Spirit"
+                width={160}
+                height={60}
+                className="mb-4"
+              />
+              <p className="text-sm mb-4">Agence de Design, développement<br />de solutions informatiques.</p>
+              <p className="text-sm mb-4">Angré 7ème Tranche, rue L155,<br />en Face Pharmacie 7Lys, Kheris Workspace</p>
+              <p className="text-sm flex items-center gap-2">
+                <span>❤️</span>
+                Fait avec amour par l'Esprit par APPS By The Spirit
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold">Liens importants</h4>
+              <div className="space-y-2">
+                <a href="/gdpr-policy" className="block text-sm hover:text-white/80 transition-colors">Politique RGPD</a>
+                <a href="https://www.behance.net/videme" target="_blank" rel="noopener noreferrer" className="block text-sm hover:text-white/80 transition-colors">Portfolio</a>
+                <a href="https://www.linkedin.com/in/videme-montcho/" target="_blank" rel="noopener noreferrer" className="block text-sm hover:text-white/80 transition-colors">LinkedIn</a>
+              </div>
+            </div>
+            <div className="flex justify-end gap-4">
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                <Image src="/whatsapp-icon.png" alt="WhatsApp" width={24} height={24} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <CookieConsent />
     </div>
   );
 }
