@@ -16,9 +16,10 @@ export default function Home() {
           />
           <nav className="hidden md:flex space-x-8">
             <a href="#" className="text-[#8987A1] hover:text-[#621B93]">Accueil</a>
-            <a href="#" className="text-[#8987A1] hover:text-[#621B93]">Avantages</a>
-            <a href="#" className="text-[#8987A1] hover:text-[#621B93]">Tarifs</a>
-            <a href="#" className="text-[#8987A1] hover:text-[#621B93]">FAQ</a>
+            <a href="#services" className="text-[#8987A1] hover:text-[#621B93]">Services</a>
+            <a href="#pricing" className="text-[#8987A1] hover:text-[#621B93]">Tarifs</a>
+            <a href="#bonus" className="text-[#8987A1] hover:text-[#621B93]">Bonus</a>
+            <a href="#contact" className="text-[#8987A1] hover:text-[#621B93]">Contact</a>
           </nav>
           <button className="bg-[#621B93] text-white px-6 py-2 rounded-full font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg">
             Se connecter
@@ -41,10 +42,9 @@ export default function Home() {
               <span className="inline-block">🚀</span>
               <p className="text-[#621B93] font-semibold">Besoin d&apos;une application rapidement ?</p>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 font-[Clash Display]">Nous créons votre Application<br />en 30 jours</h1>
-            <button className="bg-[#621B93] text-white px-8 py-3 rounded-full text-lg font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg">
+            <a href="#contact" className="bg-[#621B93] text-white px-8 py-3 rounded-full text-lg font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg inline-block">
               Je veux mon App →
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-[#621B93] text-white">
+      <section id="services" className="py-16 bg-[#621B93] text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-[Clash Display]">Nous vous aidons à<br />RÉALISER VOS PROJETS</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -149,21 +149,21 @@ export default function Home() {
             <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
               <Image src="/step1.png" alt="Demande" width={80} height={80} className="mx-auto mb-4" />
               <h4 className="text-xl font-bold mb-2">Demande<br />et Kick Off</h4>
-              <p className="text-[#8987A1]">Soumettez votre demande et réservez un call pour finaliser le cahier de charges.</p>
+              <p className="text-[#8987A1]">Soumettez une requête, connectez-vous, et réservez un call pour finaliser le cahier de charges.</p>
             </div>
 
             {/* Step 2 */}
             <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
               <Image src="/step2.png" alt="Design" width={80} height={80} className="mx-auto mb-4" />
               <h4 className="text-xl font-bold mb-2">Design prototype<br />(UX et MVP)</h4>
-              <p className="text-[#8987A1]">Nous réalisons le design UX et/ou MVP de votre projet que vous pourrez essayer pendant 10 jours.</p>
+              <p className="text-[#8987A1]">Nous réalisons le design ou MVP (1 fonctionnalité clé) de votre projet que vous pourrez tester au bout de 10 jours.</p>
             </div>
 
             {/* Step 3 */}
             <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
               <Image src="/step3.png" alt="Développement" width={80} height={80} className="mx-auto mb-4" />
               <h4 className="text-xl font-bold mb-2">Développement<br />de l&apos;application</h4>
-              <p className="text-[#8987A1]">Nous développons ensuite les interfaces et fonctionnalités de votre application.</p>
+              <p className="text-[#8987A1]">Une fois le design validée, nous développons les interfaces et fonctionnalités de votre application.</p>
             </div>
           </div>
 
@@ -172,14 +172,14 @@ export default function Home() {
             <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
               <Image src="/step4.png" alt="Test" width={80} height={80} className="mx-auto mb-4" />
               <h4 className="text-xl font-bold mb-2">Test et Déploiement</h4>
-              <p className="text-[#8987A1]">Avec la priorité à la qualité, nous testons rigoureusement chaque aspect de votre application. Une fois validée, nous la déployons pour une utilisation fluide et sans tracas pour vos utilisateurs.</p>
+              <p className="text-[#8987A1]">Vous pourrez alors tester chaque aspect de votre application. Une fois validée, nous la déployons pour une utilisation fluide et sans tracas pour vos utilisateurs.</p>
             </div>
 
             {/* Step 5 */}
             <div className="bg-[#ffffff] p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
               <Image src="/step5.png" alt="Maintenance" width={80} height={80} className="mx-auto mb-4" />
               <h4 className="text-xl font-bold mb-2">Maintenance et prise en main</h4>
-              <p className="text-[#8987A1]">Nous assurons la maintenance pendant 10 jours gratuitement, une fois déployée : nous garantissons que votre application fonctionnera au pic de sa forme, sans bugs, selon le scope du projet.</p>
+              <p className="text-[#8987A1]">Nous assurons la maintenance post déploiement (corrections, optimisation performance) sur 15 jours gratuitement, puis formons sur la prise en main et fournissons la documentation.</p>
             </div>
           </div>
         </div>
@@ -221,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 bg-white">
+      <section id="pricing" className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-[Clash Display]">Et un</h2>
           <h3 className="text-3xl md:text-4xl font-bold mb-12 text-[#621B93] font-[Clash Display]">Paiement flexible</h3>
@@ -310,7 +310,7 @@ export default function Home() {
       </section>
 
       {/* Design Services Section */}
-      <section className="py-16 bg-[#F1F3F7]">
+      <section id="bonus" className="py-16 bg-[#F1F3F7]">
         <div className="container mx-auto px-4 text-center">
           <h4 className="text-3xl md:text-4xl font-bold mb-4 font-[Clash Display]">En bonus: un accompagnement</h4>
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-[#621B93] font-[Clash Display]">en Communication et Marketing</h2>
@@ -415,11 +415,10 @@ export default function Home() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-16 bg-white">
+      <section id="contact" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center font-[Clash Display]">Contactez nous gratuitement</h2>
           <div className="max-w-3xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-bold mb-8 text-[#621B93] font-[Clash Display] text-center">Créez votre compte</h3>
             <p className="text-[#8987A1] mb-8 text-center">Notre objectif est de vous aider à concrétiser vos idées et offrir des solutions exceptionnelles à vos clients. Avec une passion pour l'innovation et l'excellence, nous nous engageons à fournir des solutions de premier ordre le plus rapidement et efficacement possible. Remplissez le formulaire et créez ainsi votre compte.</p>
             
             <form className="space-y-6">
@@ -461,7 +460,7 @@ export default function Home() {
                   </label>
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
-                    <span>Logo et Branding</span>
+                    <span>Logo, Charte et Branding</span>
                   </label>
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
@@ -473,11 +472,15 @@ export default function Home() {
                   </label>
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
+                    <span>Génération de contenus (vente produits, elearning, etc...)</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
                     <span>Pitch deck, présentations pro</span>
                   </label>
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
-                    <span>Tout l'accompagnement</span>
+                    <span>Tout l'accompagnement communication et marketing</span>
                   </label>
                 </div>
               </div>
@@ -494,6 +497,13 @@ export default function Home() {
                 <option>10M FCFA</option>
                 <option>Flexible</option>
               </select>
+              <div className="flex flex-col gap-2">
+                <label className="text-gray-600">Date limite souhaitée</label>
+                <input
+                  type="date"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93] bg-white"
+                />
+              </div>
               <textarea
                 placeholder="Décrivez votre projet..."
                 rows={4}
