@@ -21,9 +21,9 @@ export default function Home() {
             <a href="#bonus" className="text-[#8987A1] hover:text-[#621B93]">Bonus</a>
             <a href="#contact" className="text-[#8987A1] hover:text-[#621B93]">Contact</a>
           </nav>
-          <button className="bg-[#621B93] text-white px-6 py-2 rounded-full font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg">
+          <a href="/auth" className="bg-[#621B93] text-white px-6 py-2 rounded-full font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg inline-block">
             Se connecter
-          </button>
+          </a>
         </div>
       </header>
 
