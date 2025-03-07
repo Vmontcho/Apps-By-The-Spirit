@@ -54,7 +54,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg">
             <div className="aspect-video relative">
               <iframe
-                src="https://www.youtube.com/embed/s0IEmNjJqvI"
+                src="https://www.youtube.com/embed/Kw-zsyyI13M?si=I60nA6IprCmvHq00"
                 title="APPS By Spirit Presentation"
                 className="absolute top-0 left-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -70,14 +70,16 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-[Clash Display]">Nous vous aidons à<br />RÉALISER VOS PROJETS</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+
             {/* Mobile + Web App Card */}
             <div className="bg-white p-8 rounded-3xl text-black">
-              <div className="mb-6">
+              <div className="mb-6 flex justify-center">
                 <Image src="/mobile-icon.png" alt="Mobile" width={56} height={56} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Application<br />Mobile + Web</h3>
               <p className="text-[#8987A1] mb-6">1 application mobile et un tableau de bord administrateur</p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 justify-center">
                 <Image src="/react.png" alt="React" width={24} height={24} />
                 <Image src="/flutter.png" alt="Flutter" width={24} height={24} />
                 <Image src="/ios.png" alt="iOS" width={24} height={24} />
@@ -87,12 +89,12 @@ export default function Home() {
 
             {/* Responsive Web App Card */}
             <div className="bg-white p-8 rounded-3xl text-black">
-              <div className="mb-6">
+              <div className="mb-6 flex justify-center">
                 <Image src="/web-icon.png" alt="Web" width={56} height={56} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Application<br />Web responsive</h3>
               <p className="text-[#8987A1] mb-6">Site web responsive avec tableau de bord administrateur</p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 justify-center">
                 <Image src="/react.png" alt="React" width={24} height={24} />
                 <Image src="/next-js.png" alt="Next.js" width={24} height={24} />
                 <Image src="/vue.png" alt="Vue.js" width={24} height={24} />
@@ -101,12 +103,12 @@ export default function Home() {
 
             {/* Multi Apps System Card */}
             <div className="bg-white p-8 rounded-3xl text-black">
-              <div className="mb-6">
+              <div className="mb-6 flex justify-center">
                 <Image src="/window-web.png" alt="System" width={56} height={56} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Systèmes<br />Multi Apps</h3>
               <p className="text-[#8987A1] mb-6">Système complet avec plusieurs applications interconnectées</p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 justify-center">
                 <Image src="/react.png" alt="React" width={24} height={24} />
                 <Image src="/flutter.png" alt="Flutter" width={24} height={24} />
                 <Image src="/next-js.png" alt="Next.js" width={24} height={24} />
@@ -303,6 +305,251 @@ export default function Home() {
               </button>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Design Services Section */}
+      <section className="py-16 bg-[#F1F3F7]">
+        <div className="container mx-auto px-4 text-center">
+          <h4 className="text-3xl md:text-4xl font-bold mb-4 font-[Clash Display]">En bonus: un accompagnement</h4>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-[#621B93] font-[Clash Display]">en Communication et Marketing</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Logo and Branding Card */}
+            <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <div className="flex justify-center mb-4">
+                <Image src="/logo-icon.png" alt="Logo et Charte graphique" width={56} height={56} />
+              </div>
+              <h4 className="text-xl font-bold mb-2 text-center">Logo et Charte<br />graphique</h4>
+              <p className="text-[#8987A1] text-center">Nous créons votre logo et une image de marque unique.</p>
+            </div>
+
+            {/* Digital Communications Card */}
+            <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <div className="flex justify-center mb-4">
+                <Image src="/com-icon.png" alt="Com digitale et impressions" width={56} height={56} />
+              </div>
+              <h4 className="text-xl font-bold mb-2 text-center">Com digitale et<br />impressions</h4>
+              <p className="text-[#8987A1] text-center">Post réseaux sociaux, bannières, bâches, Roll-up, t-shirt, etc...</p>
+            </div>
+
+            {/* Photos and Videos Card */}
+            <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <div className="flex justify-center mb-4">
+                <Image src="/media-icon.png" alt="Photos, montage Vidéos et sons" width={56} height={56} />
+              </div>
+              <h4 className="text-xl font-bold mb-2 text-center">Photos, montage<br />Vidéos et sons</h4>
+              <p className="text-[#8987A1] text-center">Spots vidéos, podcasts, édition, long métrage, etc...</p>
+            </div>
+
+            {/* Pitch Deck Card */}
+            <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)]">
+              <div className="flex justify-center mb-4">
+                <Image src="/pitch-icon.png" alt="Pitch Deck" width={56} height={56} />
+              </div>
+              <h4 className="text-xl font-bold mb-2 text-center">Pitch Deck</h4>
+              <p className="text-[#8987A1] text-center">Présentations professionnelles, pitch de projets ou d'affaires.</p>
+            </div>
+
+            {/* Consulting et Design Card */}
+            <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)] md:col-span-2">
+              <div className="mb-4 flex justify-start">
+                <Image src="/mobile-icon.png" alt="Consulting" width={56} height={56} />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-left">Consulting et Design<br />(UX/UI)</h3>
+              <ul className="text-[#8987A1] mb-6 list-none space-y-2">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span className="text-left">Consulting UX</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span className="text-left">Maquette UX/UI complete et moderne</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span className="text-left">Fichiers prêts au développement</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span className="text-left">1 Révision gratuite (plus à 10%/ révision)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span className="text-left">Ajout d'autres écrans (sur évaluation)</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Design site web Card */}
+            <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)] md:col-span-2">
+              <div className="mb-4 flex justify-start">
+                <Image src="/web-icon.png" alt="Web Design" width={56} height={56} />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-left">Design site web +<br />landing page</h3>
+              <ul className="text-[#8987A1] mb-6 list-none space-y-2">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span className="text-left">Hébergement, domaine (.com, .org, .ci) et formation incluse</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span className="text-left">Tableau de bord Wordpress/web</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span className="text-left">Intégrations WhatsApp, Mobile Money, CRM... (sur devis)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span className="text-left">Correction pré déploiement gratuite (plus à 10-30%/mois)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500">✓</span>
+                  <span className="text-left">Systèmes (eCommerce, marketplace, eLearning) sur devis</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center font-[Clash Display]">Contactez nous gratuitement</h2>
+          <div className="max-w-3xl mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold mb-8 text-[#621B93] font-[Clash Display] text-center">Créez votre compte</h3>
+            <p className="text-[#8987A1] mb-8 text-center">Notre objectif est de vous aider à concrétiser vos idées et offrir des solutions exceptionnelles à vos clients. Avec une passion pour l'innovation et l'excellence, nous nous engageons à fournir des solutions de premier ordre le plus rapidement et efficacement possible. Remplissez le formulaire et créez ainsi votre compte.</p>
+            
+            <form className="space-y-6">
+              <input
+                type="text"
+                placeholder="Nom, Prénoms"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93]"
+              />
+              <input
+                type="email"
+                placeholder="Email (optionnel)"
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93]"
+              />
+              <div className="flex gap-4">
+                <select className="w-24 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93] bg-white">
+                  <option>🇨🇮 +225</option>
+                </select>
+                <input
+                  type="tel"
+                  placeholder="07 xx xx xx xx"
+                  className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93]"
+                />
+              </div>
+              <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93] bg-white">
+                <option>Particulier ou entreprise ?</option>
+                <option>Particulier</option>
+                <option>Entreprise</option>
+              </select>
+              <div className="space-y-3 w-full px-4 py-3 rounded-lg border border-gray-300 focus-within:border-[#621B93] bg-white">
+                <p className="text-gray-600">Services complémentaires</p>
+                <div className="space-y-2">
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
+                    <span>Design UX/UI (maquette + prototype)</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
+                    <span>Design site web</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
+                    <span>Logo et Branding</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
+                    <span>Communication digitale et/ou impressions</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
+                    <span>Tournage/Montage vidéo (pub, spots, docu, podcast)</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
+                    <span>Pitch deck, présentations pro</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" className="w-4 h-4 text-[#621B93] border-gray-300 rounded focus:ring-[#621B93]" />
+                    <span>Tout l'accompagnement</span>
+                  </label>
+                </div>
+              </div>
+              <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93] bg-white">
+                <option>Votre budget</option>
+                <option>1M - 3M FCFA</option>
+                <option>3M - 5M FCFA</option>
+                <option>5M+ FCFA</option>
+              </select>
+              <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93] bg-white">
+                <option>Le budget que vous ne pouvez absolument pas dépasser</option>
+                <option>2M FCFA</option>
+                <option>5M FCFA</option>
+                <option>10M FCFA</option>
+                <option>Flexible</option>
+              </select>
+              <textarea
+                placeholder="Décrivez votre projet..."
+                rows={4}
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93]"
+              ></textarea>
+              <button className="w-full bg-[#621B93] text-white px-6 py-3 rounded-full font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2">
+                <span className="text-xl">✨</span>
+                Soumettre une demande
+              </button>
+            </form>
+
+            <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+              <button className="flex-1 bg-[#621B93] text-white px-6 py-3 rounded-full font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2">
+                <Image src="/calendly-icon.png" alt="Calendly" width={32} height={32} />
+                Réserver un appel video via Calendly
+              </button>
+              <button className="flex-1 bg-[#621B93] text-white px-6 py-3 rounded-full font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2">
+                <Image src="/email-icon.png" alt="Email" width={32} height={32} />
+                Écrire à apps@byspirit.org
+              </button>
+              <button className="flex-1 bg-[#621B93] text-white px-6 py-3 rounded-full font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2">
+                <Image src="/whatsapp-icon.png" alt="WhatsApp" width={32} height={32} />
+                Appeler ou Écrire à +225 07 89 05 86 58
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Training Section */}
+      <section className="py-16 bg-[#F1F3F7]">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-[Clash Display]">Nous formons également des</h2>
+          <h3 className="text-3xl md:text-4xl font-bold mb-12 text-[#621B93] font-[Clash Display]">DESIGNERS et DÉVELOPPEURS LOW/NO CODE</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex items-center gap-4">
+              <span className="text-green-500 text-xl">✓</span>
+              <p className="text-left">Master UX Design avec Figma</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex items-center gap-4">
+              <span className="text-green-500 text-xl">✓</span>
+              <p className="text-left">Outils de développement Low/No Code IA</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex items-center gap-4">
+              <span className="text-green-500 text-xl">✓</span>
+              <p className="text-left">Design graphique</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex items-center gap-4">
+              <span className="text-green-500 text-xl">✓</span>
+              <p className="text-left">Gestion de projet de développement d'applications</p>
+            </div>
+          </div>
+
+          <button className="mt-8 bg-[#621B93] text-white px-8 py-3 rounded-full text-lg font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg">
+            (Bientôt...)
+          </button>
         </div>
       </section>
     </div>
