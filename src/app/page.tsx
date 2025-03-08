@@ -38,9 +38,12 @@ export default function Home() {
               height={80}
               className="mx-auto mb-8"
             />
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="inline-block">🚀</span>
-              <p className="text-[#621B93] font-semibold">Besoin d&apos;une application rapidement ?</p>
+            <div className="flex flex-col items-center gap-4 mb-8">
+              <div className="flex items-center gap-2">
+                <span className="inline-block">🚀</span>
+                <p className="text-[#621B93] font-semibold">Besoin d'une application rapidement ?</p>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black font-[Clash Display]">Nous créons votre App en 30 Jours</h1>
             </div>
             <a href="#contact" className="bg-[#621B93] text-white px-8 py-3 rounded-full text-lg font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg inline-block">
               Je veux mon App →
