@@ -450,6 +450,13 @@ export default function Home() {
                 <option>Particulier</option>
                 <option>Entreprise</option>
               </select>
+              <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93] bg-white">
+                <option value="">Service principal *</option>
+                <option value="web">Application web</option>
+                <option value="mobile-dashboard">Application mobile + tableau de bord</option>
+                <option value="multi-apps">Multi applications (1-2 mobile + web)</option>
+                <option value="none">Aucun</option>
+              </select>
               <div className="space-y-3 w-full px-4 py-3 rounded-lg border border-gray-300 focus-within:border-[#621B93] bg-white">
                 <p className="text-gray-600">Services complémentaires</p>
                 <div className="space-y-2">
@@ -491,7 +498,8 @@ export default function Home() {
                 <option>Votre budget</option>
                 <option>1M - 3M FCFA</option>
                 <option>3M - 5M FCFA</option>
-                <option>5M+ FCFA</option>
+                <option>5M - 10M FCFA</option>
+                <option>Plus de 10M+ FCFA</option>
               </select>
               <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93] bg-white">
                 <option>Le budget que vous ne pouvez absolument pas dépasser</option>
@@ -514,7 +522,7 @@ export default function Home() {
               ></textarea>
               <button className="w-full bg-[#621B93] text-white px-6 py-3 rounded-full font-[Clash Display] transition-transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2">
                 <span className="text-xl">✨</span>
-                Soumettre une demande
+                Soumettre ma demande
               </button>
             </form>
 
