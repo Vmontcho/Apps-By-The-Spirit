@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { signInUser } from '@/lib/firebase';
 import { collection, query, where, getDocs, addDoc } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
 
 export default function AuthPage() {
@@ -23,19 +23,18 @@ export default function AuthPage() {
     const password = formData.get('password') as string;
 
     if (isSignUp) {
+      // Validate password length
+      if (password.length < 6) {
+        setError('Le mot de passe doit contenir au moins 6 caractères');
+        setLoading(false);
+        return;
+      }
+
       const name = formData.get('name') as string;
       const contact = formData.get('contact') as string;
+      const role = formData.get('role') as string;
 
       try {
-        // Check if user already exists in Firestore
-        const usersRef = collection(db, 'users');
-        const q = query(usersRef, where('email', '==', email));
-        const querySnapshot = await getDocs(q);
-
-        if (!querySnapshot.empty) {
-          throw new Error('Un utilisateur avec cet email existe déjà');
-        }
-
         // Create user in Firebase Authentication
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
@@ -46,14 +45,21 @@ export default function AuthPage() {
           name,
           email,
           contact,
-          role: 'user',
+          role,
           accountType: 'particular',
           status: 'active',
           lastLogin: new Date().toISOString(),
           createdAt: new Date().toISOString()
         });
 
-        window.location.href = '/';
+        // Sign out the user after registration
+        await signOut(auth);
+        
+        // Show success message and switch to login mode
+        setError('');
+        setIsSignUp(false);
+        alert('Compte créé avec succès. Veuillez vous connecter.');
+        return; // Stop here to prevent automatic redirection
       } catch (err: any) {
         console.error('Error creating user:', err);
         if (err.code === 'auth/email-already-in-use') {
@@ -74,8 +80,9 @@ export default function AuthPage() {
           const querySnapshot = await getDocs(q);
           
           if (!querySnapshot.empty) {
-            // All users are redirected to home page
-            window.location.href = '/';
+            const userData = querySnapshot.docs[0].data();
+            // Redirect based on user role
+            window.location.href = userData.role === 'administrateur' ? '/dashboard/admin' : '/dashboard/user';
           }
         }
       } catch (err: any) {
@@ -157,6 +164,23 @@ export default function AuthPage() {
               placeholder="exemple@email.com"
             />
           </div>
+
+          {isSignUp && (
+            <div>
+              <label htmlFor="role" className="block text-sm font-medium text-gray-700">
+                Type de compte
+              </label>
+              <select
+                id="role"
+                name="role"
+                required
+                className="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#621B93]"
+              >
+                <option value="utilisateur">Utilisateur</option>
+                <option value="administrateur">Administrateur</option>
+              </select>
+            </div>
+          )}
 
           <div>
             <label htmlFor="password" className="block text-sm font-medium text-gray-700">
